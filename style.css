@@ -1,0 +1,51 @@
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0%;
+    }
+}
+
+body {
+    background-color: rgba(250, 250, 250, 0.326);
+}
+
+
+#desert {
+    position: absolute;
+    background-image: url("./images/background.png");
+    height: 200px;
+    width: 100%;
+    animation: slideright 600s infinite linear;
+    bottom: 0;
+}
+
+.dino {
+    background-image: url("./images/dino.png");
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+}
+
+.hurdle {
+    background-image: url("./images/big-cactus2.png");
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+}
+
+.gameOver {
+    background-image: url("./images/game-over.png");
+    width: 380px;
+    height: 30px;
+    display: none;
+}
+
+#alert {
+    margin-top: -100px;
+    color: rgb(0, 75, 128);
+}
